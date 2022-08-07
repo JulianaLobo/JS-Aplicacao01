@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação 01</title>
+    <script>
+        nome = prompt("Digite seu nome completo:");
+        document.write("<p>Seu nome possui " + nome.replace(/ /g, "").length + " caracteres</p><br>");
+        document.write("<p>A primeira letra do seu nome é " + nome.charAt(0) + "</p><br>");
+        document.write("<p>Seu nome convertido para letras maiúsculas: " + nome.toUpperCase() + "</p><br>");
+        document.write(`<p>Seu nome <spam style="color:red;">${nome}</spam> na cor vermelha</p><br>`);
+        document.write(`<p>Seu nome escrito 5 vezes na cor azul:</p><br><ul>`);
+        for(i=0; i<5; i++)
+            document.write(`<li style="color:blue;">${nome}</li>`)
+        document.write(`</ul>`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
